@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_menu_arquivo"
+            android:icon="@drawable/ic_archive_black_24dp"
+            android:title="Arquivo" />
+        <item
+            android:id="@+id/drawer_menu_block"
+            android:icon="@drawable/ic_block_black_24dp"
+            android:title="Bloqueio" />
+        <item
+            android:id="@+id/drawer_menu_favorite"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Favoritos" />
+
+    </group>
+
+    <item android:title="Comunicado">
+        <menu>
+            <item
+                android:id="@+id/drawer_menu_phone"
+                android:icon="@drawable/ic_contact_phone_black_24dp"
+                android:title="Telefone" />
+            <item
+                android:id="@+id/drawer_menu_download"
+                android:icon="@drawable/ic_cloud_download_black_24dp"
+                android:title="Download" />
+        </menu>
+    </item>
+</menu>

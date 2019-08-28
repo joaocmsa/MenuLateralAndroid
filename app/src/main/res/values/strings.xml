@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="navigation_drawer_open">Abrindo navigation drawer</string>
+    <string name="navigation_drawer_close">Fechando navigation drawer</string>
+    <string name="limpar">Limpar</string>
+    <string name="salvar">Salvar</string>
+</resources>

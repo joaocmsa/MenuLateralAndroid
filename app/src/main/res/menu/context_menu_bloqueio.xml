@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/activity_novo_cliente_btnSalvar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_save_branco"
+        android:title="@string/salvar"/>
+
+    <item android:id="@+id/activity_novo_clente_limpar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_lixeira"
+        android:title="@string/limpar"/>
+</menu>
