@@ -3,4 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="CorPrimaria">#618C03</color>
+    <color name="CorDark">#1D5902</color>
+    <color name="CorLight">#6F930C</color>
+    <color name="CorPrimariaDark">#1B7302</color>
+    <color name="CorAccent">#589A0E</color>
+    <color name="CorDivider">#BDBDBD</color>
+    <color name="CorTextoSecundaria">#757575</color>
+    <color name="CorTexto">#FFFFFF</color>
+    <color name="CorIcone">#618C03</color>
 </resources>
