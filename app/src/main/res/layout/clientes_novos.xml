@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BlockFragment"
+    tools:showIn="@layout/fragmento_block">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtCodigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Código:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtIdCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toEndOf="@+id/activity_novo_cliente_txtCodigo"
+            app:layout_constraintTop_toTopOf="@+id/activity_novo_cliente_txtCodigo" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtTipoCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tipo de cliente:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtCodigo"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtCodigo" />
+
+        <Spinner
+            android:id="@+id/activity_novo_cliente_spinnerTipoCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tamanho_spinner"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toEndOf="@+id/activity_novo_cliente_txtTipoCliente"
+            app:layout_constraintTop_toTopOf="@+id/activity_novo_cliente_txtTipoCliente" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtDocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Documento:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtTipoCliente" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtDocumento"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtDocumento"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtRazaoSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Razão social:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtDocumento"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtDocumento" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtRazaoSocial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtRazaoSocial"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtRazaoSocial"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtNomeFantasia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nome fantasia:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtRazaoSocial"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtRazaoSocial" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtNomeFantasia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtNomeFantasia"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtNomeFantasia"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtProprietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Proprietário:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtNomeFantasia"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtNomeFantasia" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtProprietario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtProprietario"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtProprietario"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="E-mail:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtProprietario"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtProprietario" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtEmail"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtEmail"
+            tools:targetApi="o" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtSegmento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Segmento:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtEmail"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtEmail" />
+
+        <Spinner
+            android:id="@+id/activity_novo_cliente_spinnerSegmento"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tamanho_spinner"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtSegmento"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtSegmento" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtIE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="16dp"
+            android:text="I.E:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toEndOf="@+id/activity_novo_cliente_txtUF"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtCep" />
+
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtIE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtIE"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtIE" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtUF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="UF:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtCep"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtCep" />
+
+        <Spinner
+            android:id="@+id/activity_novo_cliente_spinnerUF"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tamanho_spinner"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtUF"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtUF" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="CEP:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_spinnerSegmento"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_spinnerSegmento" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtCep"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtCep" />
+
+        <ImageButton
+            android:id="@+id/activity_novo_cliente_imgBtnPesquisaCep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/CorTexto"
+            android:src="@drawable/ic_block_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/activity_novo_cliente_edtCep"
+            app:layout_constraintStart_toEndOf="@+id/activity_novo_cliente_edtCep"
+            app:layout_constraintTop_toTopOf="@+id/activity_novo_cliente_edtCep" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtLogradouro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tipo de logradouro:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_spinnerUF"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_spinnerUF" />
+
+        <Spinner
+            android:id="@+id/activity_novo_cliente_spinnerTipoLogradouro"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/tamanho_spinner"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtLogradouro"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtLogradouro" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Endereço:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_spinnerTipoLogradouro"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_spinnerTipoLogradouro" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtEndereco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtEndereco"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtEndereco" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nº:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtEndereco"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtEndereco" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtNumero"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtNumero"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtNumero" />
+
+
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtComplemento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="8dp"
+            android:text="Complemento:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toEndOf="@+id/activity_novo_cliente_txtNumero"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtEndereco" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtComplemento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintEnd_toEndOf="@+id/activity_novo_cliente_edtEndereco"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtComplemento"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtComplemento" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtReferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Referência:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtNumero"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtNumero" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtReferencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/activity_novo_cliente_edtComplemento"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtReferencia"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtReferencia" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtBairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Bairro:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtReferencia"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtReferencia" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtBairro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintEnd_toEndOf="@+id/activity_novo_cliente_edtReferencia"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtBairro"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtBairro" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtMunicipio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            android:text="Municipío:"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtBairro"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtBairro" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtMunicipio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtMunicipio"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtMunicipio" />
+
+        <ImageButton
+            android:id="@+id/activity_novo_cliente_btnMunicipio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@color/CorTexto"
+            android:src="@drawable/ic_block_black_24dp"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toEndOf="@+id/activity_novo_cliente_edtMunicipio"
+            app:layout_constraintTop_toTopOf="@+id/activity_novo_cliente_edtMunicipio"
+            />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtFone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Fone:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_edtMunicipio"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtMunicipio" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtFone"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtFone"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtFone" />
+
+        <TextView
+            android:id="@+id/activity_novo_cliente_txtCelular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="8dp"
+            android:text="Celular:"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintStart_toEndOf="@+id/activity_novo_cliente_txtFone"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_edtMunicipio" />
+
+        <EditText
+            android:id="@+id/activity_novo_cliente_edtCelular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/CorDark"
+            android:textSize="@dimen/tamanho_texto"
+            app:layout_constraintEnd_toEndOf="@+id/activity_novo_cliente_edtBairro"
+            app:layout_constraintStart_toStartOf="@+id/activity_novo_cliente_txtCelular"
+            app:layout_constraintTop_toBottomOf="@+id/activity_novo_cliente_txtCelular" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
